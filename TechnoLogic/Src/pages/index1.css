@@ -1,0 +1,282 @@
+body{
+  background-image: url("/TechnoLogic/Public/assets/images/wepik-export-20240323232956hcGd.jpeg");
+  display: flex;
+  background-repeat: no-repeat
+}
+
+.prt1 .cabecalho{
+  display: flex;
+  justify-content: space-around;
+  align-items: center
+}
+
+.prt2 a:hover{
+fill: #d17842;
+opacity: 0.2;
+}
+
+
+section {
+  --col-orange: #d17842;
+  --col-dark: #0a0d13;
+  --col-darkGray: #52555a;
+  --col-gray: #aeaeae;
+
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: var(--col-dark);
+  border-radius: 30px;
+}
+.label {
+  padding: 8px 18px;
+  transition: all 200ms;
+  display: inline-block;
+}
+
+.label input[type="radio"] {
+  display: none;
+}
+.label > svg {
+  transition: all 200ms;
+  fill: var(--col-gray);
+  width: 14px;
+}
+.label:hover:not(:has(input:checked)) > svg {
+  fill: #d17842;
+  opacity: 0.6;
+}
+.label::before {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  border-radius: 5px;
+  position: relative;
+  left: 50%;
+  top: 20px;
+  background: var(--col-orange);
+  transition: all 200ms;
+}
+.label > svg {
+  transition: 300ms;
+  fill: var(--col-darkGray);
+  margin-top: 0;
+}
+.label:has(input:checked) > svg {
+  fill: var(--col-orange);
+  scale: 1.2;
+  margin-top: -5px;
+}
+
+.label:has(input:checked)::before {
+  width: 100%;
+  left: 0;
+  top: 25px;
+}
+
+
+
+.prt1{
+  background-position: 8%;
+  width: 1370px;
+  height: 500px;
+  margin-top: -28px;
+  margin-left: -15px;
+}
+
+.input {
+  background-color: #212121;
+  max-width: 190px;
+  height: 40px;
+  padding: 10px;
+  /* text-align: center; */
+  border: 2px solid white;
+  border-radius: 5px;
+  /* box-shadow: 3px 3px 2px rgb(249, 255, 85); */
+}
+
+.input:focus {
+  color: rgb(0, 255, 255);
+  background-color: #212121;
+  outline-color: rgb(0, 255, 255);
+  box-shadow: -3px -3px 15px rgb(0, 255, 255);
+  transition: .1s;
+  transition-property: box-shadow;
+  height: 10px;
+}
+
+
+
+
+.prt1 h1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: italic;
+
+}
+
+.prt1 h2, h3{
+margin-left: 250px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-style: italic;
+color: #fff ;
+}
+
+.prt1 img{
+  width: 500px;
+  margin-left: 50%;
+  margin-top: -240px;
+  display: flex;
+  border-radius: 20px;
+}
+
+.prt1 img:hover{
+  box-shadow: -2px 3px 10px 5px #ffffff;
+}
+
+.prt1 .img2 img{
+  width: 150px;
+  margin-left: 50px;
+  margin-top: -300px;
+  border-radius: 5px
+}
+
+
+.prt2{
+  width: 100%;
+  height: 450px;
+  display: flex;
+  flex-direction: row-reverse ;
+  justify-content: center;
+  align-items: center;
+}
+
+.prt2 .texts{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: larger;
+  margin-left: 20px;
+  color: #fff;
+}
+
+.prt2 .img-idiomas img{
+  width: 300px;
+  
+}
+
+.prt2 .texts a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.prt2 .texts:hover{
+  box-shadow: 1px 2px 8px 3px #00ffd5;
+}
+
+
+
+.prt3{
+  background-color: #000;
+  width: 100%;
+  height: 450px;
+  margin-left: -7px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: baseline;
+  justify-content: center;
+}   
+
+.prt5 p{
+  color: #fff;
+}
+
+.prt3 ul {
+  list-style: none;
+}
+
+.example-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.example-2 .icon-content {
+  margin: 0 10px;
+  position: relative;
+}
+.example-2 .icon-content .tooltip {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 15px;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+.example-2 .icon-content:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+  top: -50px;
+}
+.example-2 .icon-content a {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 20%;
+  color: #4d4d4d;
+  background-color: #ffff;
+  transition: all 0.3s ease-in-out;
+}
+.example-2 .icon-content a:hover {
+  box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 50%);
+}
+.example-2 .icon-content a svg {
+  position: relative;
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+}
+.example-2 .icon-content a:hover {
+  color: white;
+}
+.example-2 .icon-content a .filled {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: #000;
+  transition: all 0.3s ease-in-out;
+}
+.example-2 .icon-content a:hover .filled {
+  height: 100%;
+}
+.example-2 .icon-content a[data-social="spotify"] .filled,
+.example-2 .icon-content a[data-social="spotify"] ~ .tooltip {
+  background-color: #1db954;
+}
+.example-2 .icon-content a[data-social="pinterest"] .filled,
+.example-2 .icon-content a[data-social="pinterest"] ~ .tooltip {
+  background-color: #bd081c;
+}
+.example-2 .icon-content a[data-social="dribbble"] .filled,
+.example-2 .icon-content a[data-social="dribbble"] ~ .tooltip {
+  background-color: #ea4c89;
+}
+.example-2 .icon-content a[data-social="telegram"] .filled,
+.example-2 .icon-content a[data-social="telegram"] ~ .tooltip {
+  background-color: #0088cc;
+} 
+
